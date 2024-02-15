@@ -44,13 +44,20 @@ We keep the vector representations of words or image patches the same throughout
 	
 	Imagine we're looking at movie reviews to see if they're positive or negative. We assign each word in a review a fixed way of being represented, like a label. So, the word "good" always gets the same label, no matter where it shows up or what movie it's talking about.
 
-**Image Example:**
+- **Image Example:**
 
   Let's say we're sorting pictures of animals. Each little part of a picture, like a spot of fur or a bit of an animal's face, gets a fixed way of being represented, like a tag. So, a part representing a dog's tail always gets the same tag, no matter what kind of dog it is or where the tail is in the picture.
 
-- **Learned Embeddings** : we can tweak these vector representations while the model is learning, to make them better suited for the task at hand.
+## **Learned Embeddings** : 
+we can tweak these vector representations while the model is learning, to make them better suited for the task at hand.
 
 
+- **Text Example**:
 
+Going back to the movie reviews, during training, the model figures out better ways to represent words based on the review's tone. So, the word "good" might get different labels depending on if it's used in a happy or sad review.
 
+- **Image Example**:
 
+For sorting images of animals, the model learns to adjust how it tags parts of the pictures to better tell different animals apart. So, the tag for a dog's tail might change a bit depending on if it's a big dog or a small one, or if the tail is sticking up or hanging down.
+
+- In simple words, `fixed embeddings` keep things the same, while `learned embeddings` let the model change how it sees things to get better at its job.

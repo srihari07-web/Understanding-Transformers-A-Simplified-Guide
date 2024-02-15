@@ -34,18 +34,19 @@ The tokens can be collected into a matrix X(0) which is D × N.
 
 - For example, if we're looking at a photo of a dog, we might divide it into different parts like the dog's face, tail, or body.
 
-*****
-
 **Now, there are two ways we can handle these representations:**
-- **Fixed Embeddings**: We keep the vector representations of words or image patches the same throughout the process.
 
-**Text Example**:
+## **Fixed Embeddings**: 
 
-Imagine we're looking at movie reviews to see if they're positive or negative. We assign each word in a review a fixed way of being represented, like a label. So, the word "good" always gets the same label, no matter where it shows up or what movie it's talking about.
+We keep the vector representations of words or image patches the same throughout the process.
+
+- **Text Example**:
+	
+	Imagine we're looking at movie reviews to see if they're positive or negative. We assign each word in a review a fixed way of being represented, like a label. So, the word "good" always gets the same label, no matter where it shows up or what movie it's talking about.
 
 **Image Example:**
 
-Let's say we're sorting pictures of animals. Each little part of a picture, like a spot of fur or a bit of an animal's face, gets a fixed way of being represented, like a tag. So, a part representing a dog's tail always gets the same tag, no matter what kind of dog it is or where the tail is in the picture.
+  Let's say we're sorting pictures of animals. Each little part of a picture, like a spot of fur or a bit of an animal's face, gets a fixed way of being represented, like a tag. So, a part representing a dog's tail always gets the same tag, no matter what kind of dog it is or where the tail is in the picture.
 
 - **Learned Embeddings** : we can tweak these vector representations while the model is learning, to make them better suited for the task at hand.
 
